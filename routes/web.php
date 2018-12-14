@@ -53,6 +53,7 @@ Route::resource('applicationForms', 'ApplicationFormController');
 Route::resource('newsItems', 'NewsItemController');
 Route::resource('frontEndReplacement', 'FrontEndReplacementController');
 Route::resource('mailList', 'MailListController');
+Route::resource('declarations','Declaration/DeclarationController');
 Route::post('/lidworden', 'PendingUserController@storePendingUser');
 Route::resource('books', 'LibraryController');
 Route::post('images/upload', 'StorageController@uploadImage');
