@@ -9,11 +9,11 @@
     </div>
 </div>
 
-<section class="pt-3">
+<section class="py-3">
     <div class="container">
         <div class="row d-flex align-items-stretch align-items-center">
             @foreach($newsItems as $newsItem)
-            <div class="col-sm-4 d-flex flex-wrap">
+            <div class="col-lg-4 col-md-6 d-flex flex-wrap">
                 <div class="card w-100 position-relative">
                     @if($newsItem->image_url != "")
                     <a href="/nieuws/{{ $newsItem->id }}">
