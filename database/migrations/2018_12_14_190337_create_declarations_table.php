@@ -19,12 +19,14 @@ class CreateDeclarationsTable extends Migration
             $table->unsignedInteger('user_id');
             $table->string('type');
             $table->string('state')->default(Declaration::STATE_PENDING);
-            $table->string('activtiy');
             $table->date('date'); //the date for the declartion. Depending on the type this contains the payment or creation date
-            $table->double('price');
-            $table->text('description')->nullable();
+            $table->double('amount');
+            $table->text('short_description');
+            $table->text('long_description')->nullable();
             $table->text('decline_reason')->nullable();
-            $table->integer('follow_number')->nullable();
+            $table->integer('follow_number');
+            $table->string('pdf_url');
+
 
             $table->foreign('user_id')
                 ->references('id')

@@ -1,5 +1,6 @@
 <?php
 return [
+    'name' => 'Declaraties',
     'created' => 'Declaratie aangemaakt',
     'updated' => 'Declaratie geupdate',
     'deleted' => 'Declaratie verwijderd',

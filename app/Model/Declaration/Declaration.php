@@ -21,11 +21,12 @@ class Declaration extends Model
     protected $fillable = [
         'user_id',
         'state',
-        'activtiy',
-        'description',
-        'price',
+        'short_description',
+        'long_description',
+        'amount',
         'type',
         'date',
+        'pdf_url',
     ];
 
     protected $dates = [

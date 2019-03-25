@@ -138,6 +138,11 @@
                                 {{trans("MailList.menuname")}} <span class="ion-ios-arrow-forward align-middle ml-1"></span>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a href="{{ url('declarations') }}" class="nav-link">
+                                {{trans("declaration.name")}} <span class="ion-ios-arrow-forward align-middle ml-1"></span>
+                                </a>
+                            </li>
                         @endif
                     @endif
                 </ul>
